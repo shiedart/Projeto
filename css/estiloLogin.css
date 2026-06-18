@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.loginBox {
+    margin: auto;
+    background-color: white;
+    width: 60%;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+div.titulo {
+    text-align: center;
+}
+
+div.titulo h2 {
+    border: 2px solid #218A3A;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+}
+
+div.titulo p {
+    margin-top: 10px;
+}
+
+div.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+}
+
+div.inputs input {
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.61);
+    margin-bottom: 2px;
+}
+
+div.inputs button {
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: #218A3A;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+div.inputs button:hover {
+    background-color: #196b2d;
+}
+
+div.inputs button:active {
+    transform: scale(0.97);
+}
+
+div.inputs label {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+body.dark-mode div.loginBox {
+    background-color: #1e2a38;
+    color: white;
+}
+
+body.dark-mode div.titulo h2 {
+    color: white;
+    border-color: #4caf70;
+}
+
+body.dark-mode div.titulo p {
+    color: #ccc;
+}
+
+body.dark-mode div.inputs input {
+    background-color: #2c3e50;
+    color: white;
+    border-color: #4caf70;
+}
+
+body.dark-mode div.inputs input::placeholder {
+    color: #aaa;
+}
+
+body.dark-mode div.inputs label {
+    color: #ccc;
+}
